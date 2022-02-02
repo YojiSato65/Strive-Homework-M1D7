@@ -19,6 +19,11 @@
            color: yellowgreen;
        }
 
+       .picture {
+           visibility: hidden;
+       }
+
+
     </style>
 </head>
 
@@ -28,7 +33,7 @@
     <button onclick="changeBackgroundColor()">Ex.8</button>
     <button onclick="fakeAddress()">Ex.9</button>
     <button onclick="modifyAmazonlink()">Ex.10</button>
-    <button onclick="">Ex.11</button>
+    <button onclick="modifyImage()">Ex.11</button>
     <button onclick="">Ex.12</button>
     <h1>BlackBank</h1>
     <h2>Top seller products</h2>
@@ -114,7 +119,13 @@
             }
         }
 
-        
+// -------ex.11
+        const modifyImage = function() {
+            let newImages = document.getElementsByTagName('img')
+            for (imageNode of newImages) {
+                imageNode.classList.toggle('picture')
+            }
+        }        
 
 
     </script>
