@@ -13,12 +13,21 @@
 
         input {
             width: 300px; height: 200px;
-     
         }
+
+       
 
     </style>
 </head>
+
+
 <body>
+    <button onclick="setHeaderToSelected()">Ex.7</button>
+    <button onclick="changeBackgroundColor()">Ex.8</button>
+    <button onclick="">Ex.9</button>
+    <button onclick="">Ex.10</button>
+    <button onclick="">Ex.11</button>
+    <button onclick="">Ex.12</button>
     <h1>BlackBank</h1>
     <h2>Top seller products</h2>
     <div>
@@ -68,11 +77,36 @@
     
     <footer>
        <h3>BlackBank</h3>
-       <p>str.Kuroishi 21, 1000, Aomori, Japan</p>
+       <div id="address">str.Kuroishi 21, 1000, Aomori, Japan</div>
     </footer>
     <hr>
     <h2>Contact form</h2>
     <input type="text">
     <label for="contact" id="contact"></label>
+    
+    <script type="text/javascript">
+// --------ex.7
+        const setHeaderToSelected = function() {
+        let newHeader = document.getElementsByTagName("h1")
+        newHeader[0].innerText = 'Redbank'
+    }
+
+
+// --------ex.8
+        const changeBackgroundColor = function() {
+            let newBackgroundColor = document.querySelector('body')
+            newBackgroundColor.style.backgroundColor = '#ff1122'
+        }
+
+// --------ex.9 NOT SURE WHY IT'S NOT WORKING..
+        const fakeAddress = function() {
+            let newAddress = document.getElementById("address")
+            newAddress.innerText = 'str.somewhere 11, 99999, Bulgaria' 
+        }
+
+// -------ex.10
+
+
+    </script>
 </body>
 </html>
