@@ -15,7 +15,9 @@
             width: 300px; height: 200px;
         }
 
-       
+       .selected {
+           color: yellowgreen;
+       }
 
     </style>
 </head>
@@ -25,7 +27,7 @@
     <button onclick="setHeaderToSelected()">Ex.7</button>
     <button onclick="changeBackgroundColor()">Ex.8</button>
     <button onclick="fakeAddress()">Ex.9</button>
-    <button onclick="">Ex.10</button>
+    <button onclick="modifyAmazonlink()">Ex.10</button>
     <button onclick="">Ex.11</button>
     <button onclick="">Ex.12</button>
     <h1>BlackBank</h1>
@@ -105,6 +107,14 @@
         }
 
 // -------ex.10
+        const modifyAmazonlink = function() {
+            let newAmazonLinks = document.getElementsByTagName('a')
+            for (amazonLinkNode of newAmazonLinks) {
+                amazonLinkNode.classList.toggle('selected')
+            }
+        }
+
+        
 
 
     </script>
